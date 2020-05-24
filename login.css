@@ -143,7 +143,6 @@ html, body {
 
   #login_signup{
     max-width: 190px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.514);
   }
 
   #login_signup td{
@@ -167,7 +166,7 @@ html, body {
 
  #LOGIN{
   max-width:270px;
-  min-width: 200px;
+  min-width: 160px;
  }
   /* Form inputs */
   .fo{
@@ -189,11 +188,32 @@ html, body {
   min-width: 220px;
 }
 
-.forgot_password{
-  color: #227093;
+.btn-get-otp {
+  padding: 4px 8px;
+  color: white;
+  background-color: #227093;
+  border-radius: 4px;
   font-size: small;
 }
-
+  
+.btn-get-otp:hover, .btn-get-otp:focus {
+  color: white;
+  font-weight: bolder;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+}
+.btn-enter-otp {
+  padding: 4px 8px;
+  background-color: white;
+  border: 1px solid #227093;
+  color: #227093;
+  border-radius: 4px;
+  font-size: small;
+}
+.btn-enter-otp:hover, .btn-enter-otp:focus {
+  color: #227093;
+  font-weight: bolder;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+}
 .btn-sleefax {
   min-width: 100px;
   padding: 8px 15px;
