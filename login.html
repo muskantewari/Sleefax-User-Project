@@ -16,7 +16,6 @@
   </head>
   
   <body>
-  
   <!-- Navbar -->
   <nav class="navbar navbar-light navbar-expand-md pb-0" id="navbar-id">
   
@@ -100,14 +99,14 @@
             </div>
 
             <div class="row justify-content-left mt-3">
-              <button type="button" class="btn btn-get-otp mt-2" data-toggle="modal" data-target="#exampleModal">Get OTP</button>
+              <button type="button" class="btn btn-get-otp mt-2" data-toggle="modal" data-target="#exampleModalCenter">Get OTP</button>
             </div>
 
             <div class="row justify-content-left">
               <div class="pt-3" style="font-size: small;">
                 Already have an OTP ?
               </div>
-              <button type="submit" class="btn btn-enter-otp mt-2 ml-3">Enter OTP</button>
+              <button type="button" class="btn btn-enter-otp mt-2 ml-3" data-toggle="modal" data-target="#exampleModalCenter2">Enter OTP</button>
             </div>
 
             <div class="row justify-content-left mt-2 custom-control custom-checkbox">
@@ -155,28 +154,85 @@
       </div>
     </div>
   </div>
-  <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+
+  <!-- Modal get otp -->
+  <div class="modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content modal_card px-4">
+        <div class="modal-body" >
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="row justify-content-center mt-3" style="color:#227093; font-size: smaller;">
+              An OTP has been sent to +91 1234567890
+            </div>
+            <div class="row justify-content-left mt-3 ml-1" style="font-size: smaller;">
+             &nbsp; Enter OTP
+            </div>
+            <div class="row justify-content-center mt-1">
+              <input type="text" class="otp_input form-control">
+              <input type="text" class="otp_input form-control ml-2">
+              <input type="text" class="otp_input form-control ml-2">
+              <input type="text" class="otp_input form-control ml-2">
+              <input type="text" class="otp_input form-control ml-2">
+              <input type="text" class="otp_input form-control ml-2">
+            </div>
+            <div class="row justify-content-center mt-2">
+              <button type="button" class="btn btn-verify-otp mt-2">VERIFY</button>
+            </div>
+            <div class="row justify-content-center mt-3" style="font-size: x-small;">
+              Please wait for &nbsp;<b> 01:30 </b> &nbsp;before requesting another OTP
+            </div>
+            <div class="row justify-content-center mt-2">
+              <div class="pt-1 mt-1" style="font-size: small;">
+                Haven't received OTP ?
+              </div>
+              <button type="button" class="btn btn-resend-otp ml-3 mt-1">Resend OTP</button>
+            </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
   
+  <!-- Modal get otp -->
+  <div class="modal" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content modal_card px-4">
+        <div class="modal-body" >
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <div class="row justify-content-center mt-3" style="color:#227093; font-size: smaller;">
+            Enter the OTP that you already have
+          </div>
+          <div class="row justify-content-left mt-3 ml-1" style="font-size: smaller;">
+           &nbsp; Enter OTP
+          </div>
+          <div class="row justify-content-center mt-1">
+            <input type="text" class="otp_input form-control">
+            <input type="text" class="otp_input form-control ml-2">
+            <input type="text" class="otp_input form-control ml-2">
+            <input type="text" class="otp_input form-control ml-2">
+            <input type="text" class="otp_input form-control ml-2">
+            <input type="text" class="otp_input form-control ml-2">
+          </div>
+          <div class="row justify-content-center mt-2">
+            <button type="button" class="btn btn-verify-otp mt-2">VERIFY</button>
+          </div>
+          <div class="row justify-content-center mt-3" style="font-size: x-small;">
+            Please wait for &nbsp;<b> 01:30 </b> &nbsp;before requesting another OTP
+          </div>
+          <div class="row justify-content-center mt-2">
+            <div class="pt-1 mt-1" style="font-size: small;">
+              Haven't received OTP ?
+            </div>
+            <button type="button" class="btn btn-resend-otp ml-3 mt-1">Resend OTP</button>
+          </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer class="page-footer pt-4 mt-5">
       <div class="container-fluid text-center text-md-left pt-2 pb-5">
@@ -283,14 +339,9 @@
     </div>
   
   </footer>
-
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script>
-    $('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').trigger('focus')
-})
-  </script>
   </body>
   </html>
