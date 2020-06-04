@@ -8,9 +8,9 @@ Select Shop: https://muskantewari.github.io/Sleefax-User-Project/select-shop
 
 Files Ready: https://muskantewari.github.io/Sleefax-User-Project/files-ready
 
-Orders Completed: https://muskantewari.github.io/Sleefax-User-Project/orders-completed
+Order Completed: https://muskantewari.github.io/Sleefax-User-Project/order-completed
 
-Orders Received: https://muskantewari.github.io/Sleefax-User-Project/orders-received
+Order Received: https://muskantewari.github.io/Sleefax-User-Project/order-received
 
 Settings: https://muskantewari.github.io/Sleefax-User-Project/settings 
 
